@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <p>Please enter your name below.</p><br>
+    <input type="text" id="name" name="name"><br>
+    <!-- Added id="submit" so the JavaScript can find the button -->
+    <button type="button" id="submit">Submit</button>
+
+    <script>
+        // Select elements
+        const nameInput = document.getElementById("name");
+        const submitBtn = document.getElementById("submit");
+
+        // Assign the click function correctly
+        submitBtn.onclick = function() {
+            // Use .value to get the text inside the input
+            console.log(`Hi ${nameInput.value}`);
+        }
+    </script>
+</body>
+</html>
