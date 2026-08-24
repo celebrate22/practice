@@ -7,7 +7,7 @@ import (
 	"log"
 	"net/http"
 	"strconv"
-    "modernc.org/sqlite"
+    _ "modernc.org/sqlite"
 )
 
 type Task struct {
